@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -8,7 +8,7 @@ import clientData from "./data/clientData";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="min-h-screen bg-[#07111f] text-white">
         <Navbar data={clientData} />
 
@@ -20,6 +20,6 @@ export default function App() {
 
         <Footer data={clientData} />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
